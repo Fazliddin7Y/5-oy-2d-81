@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
 </head>
 <body>
-  <h1>String Tekshirish</h1>
+    <h1>String Functions</h1>
+    <label for="inputString">string kiriting</label>
+    <input type="text" id="inputString">
 
-  <h3>String kriting</h3> 
-  <input type="text" id="endsLyInput">
-  <button id="checkEndsLy">Tekshirish</button>
-  <p id="endsLyResult"></p>
+    <label for="functionSelect">funksiyani tanlang</label>
+    <select id="functionSelect">
+        <option value="theEnd">theEnd</option>
+        <option value="withoutEnd2">withoutEnd2</option>
+        <option value="middleTwo">middleTwo</option>
+        <option value="endsLy">endsLy</option>
+        <option value="nTwice">nTwice</option>
+    </select>
 
-  <script src="./main.js"></script>
+    <div id="additionalOptions">
+        <label>
+            <input type="checkbox" id="frontCheck">
+            Front (theEnd funksiyasi uchun)
+        </label>
+
+        <label for="nValue">n value (nTwice funksiyasi uchun)</label>
+        <input type="number" id="nValue" value="2">
+    </div>
+
+    <button onclick="executeFunction()">Execute</button>
+
+    <h2 id="result">Javob </h2>
 </body>
 </html>
